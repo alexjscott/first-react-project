@@ -13,7 +13,7 @@ function App() {
       console.log(name)
       setTodos(prevTodos =>
         {
-          return [...[prevTodos, {id: uuidv4(), name: name, complete: false}]]
+          return [...prevTodos, {id: uuidv4(), name: name, complete: false}]
         })
       todoNameRef.current.value = null
   }
